@@ -97,7 +97,7 @@ const _WebGLSearch = (instance, searchObject) => {
   WebGL.run(instance.context, "col_check");
 
   if(WebGL.readData(instance.context, Const.STATE_LENGTH,0, 1, 1)[2] === -1 ) {
-    if(instance.state == PDState.INTERRUPTED) return instance._save(searchObject);
+    if(instance.state == PDState.INTERRUPTED) return _save(instance, searchObject);
     //requestAnimationFrame(() => instance._WebGLSearch(searchObject));
     setTimeout(() => _WebGLSearch(instance, searchObject), 1);
   } else {
@@ -144,5 +144,6 @@ module.exports = {
   offsetState,
   prepare,
   search,
+  interrupt,
   doNext,
 };
