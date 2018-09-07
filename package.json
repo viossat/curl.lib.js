@@ -8,13 +8,13 @@
     "lib": "lib"
   },
   "dependencies": {
-    "babel-core": "^6.26.0",
-    "babel-loader": "^7.1.2",
-    "babel-preset-env": "^1.6.0",
     "iota.crypto.js": "github:iotaledger/iota.crypto.js",
     "loader-utils": "^1.1.0"
   },
   "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.0",
     "chai": "^3.5.0",
     "eslint": "^4.5.0",
     "gulp": "^3.9.1",
